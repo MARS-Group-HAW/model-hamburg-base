@@ -35,6 +35,9 @@ Below is a list of some of the layer data provided along ith the HBM:
 - `HamburgBaseModel/Resources/altona_mitte`: georeferenced environment data for the Hamburg districts Ottensen, Altona-Altstadt, St. Pauli, Altona-Nord, and Sternschanze
 - `HamburgBaseModel/Resources/hamburg`: georeferenced environment data for the Hamburg metropolitan area
 
+> **Note**  
+> Due to file size restrictions, some of the input files are provided in ZIP archives. Such files need to be unzipped to become accessible to the model and usable for a simulation.
+
 ## Visualisation
 
 By default, simulations produce a file `trips.geojson` in the directory `bin` that is auto-generated when the project is compiled and run. This file contains the movement trajectories of all agents that moved during the simulation. To visualize the trajectories:
