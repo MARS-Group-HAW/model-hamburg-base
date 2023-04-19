@@ -1,0 +1,114 @@
+{
+  "id": "Hamburg Base Model",
+  "globals": {
+    "deltaT": 1,
+    "startPoint": "2021-10-11T08:00:00",
+    "endPoint": "2021-10-11T20:00:00",
+    "deltaTUnit": "seconds",
+    "console": true
+  },
+  "agents": [
+    {
+      "name": "Patient",
+      "count": 100,
+      "file": "Resources/agents/patientInit1k.csv",
+      "outputs": [
+        {
+          "kind": "trips",
+          "outputConfiguration": {
+            "tripsFields": [
+              "DoctorsOffice",
+              "StableId"
+            ]
+          }
+        }
+      ],
+      "individual": [
+        { "value": true, "parameter": "ResultTrajectoryEnabled" }
+      ]
+    },
+    {
+      "name": "CityDriver",
+      "count": 0,
+      "file": "Resources/agents/cityDriver10PerModality.csv",
+      "outputs": [
+        {
+          "kind": "csv",
+          "options": {
+            "delimiter": ";"
+          }
+        },
+        {
+          "kind": "trips",
+          "outputConfiguration": {
+            "tripsFields": [
+              "RouteMainModality",
+              "StableId"
+            ]
+          }
+        }
+      ],
+      "individual": [
+        { "value": true, "parameter": "ResultTrajectoryEnabled" }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "name": "SpatialGraphMediatorLayer",
+      "inputs": [
+        {
+          "file": "Resources/altona_mitte/altona_mitte_walk_graph.geojson",
+          "inputConfiguration": {
+            "modalities": [
+              "Walking"
+            ],
+            "isBidirectedGraph": true
+          }
+        },
+        {
+          "file": "Resources/altona_mitte/altona_mitte_drive_graph.geojson",
+          "inputConfiguration": {
+            "modalities": [
+              "Cycling",
+              "CarDriving"
+            ],
+            "isBidirectedGraph": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "DoctorLayer",
+      "file": "Resources/altona_mitte/altona_mitte_healthcare_validated.geojson"
+    },
+    {
+      "name": "VectorBuildingsLayer",
+      "file": "Resources/altona_mitte/altona_mitte_buildings.geojson"
+    },
+    {
+      "name": "BicycleRentalLayer",
+      "file": "Resources/altona_mitte/altona_mitte_bike_rental.geojson",
+      "outputFrequency": 60,
+      "output": "geojson"
+    },
+    {
+      "name": "CarParkingLayer",
+      "file": "Resources/altona_mitte/altona_mitte_parking.geojson"
+    }
+  ],
+  "entities": [
+    {
+      "name": "RentalBicycle",
+      "file": "Resources/entities/bicycle.csv"
+    },
+    {
+      "name": "Bicycle",
+      "file": "Resources/entities/bicycle.csv"
+    },
+    {
+      "name": "Car",
+      "file": "Resources/entities/car.csv"
+    }
+  ]
+}
