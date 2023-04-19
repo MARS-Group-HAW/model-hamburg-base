@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "1altona_mitte_healthcare",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.98, "osm_id": "390878856", "code": 2120, "fclass": "doctors", "name": "Ärztezentrum Struenseehaus" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9437175, 53.5491489 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.20, "osm_id": "905410530", "code": 2120, "fclass": "doctors", "name": "Geburtshaus Hamburg" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9336469, 53.5485031 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.80, "osm_id": "1574464373", "code": 2120, "fclass": "doctors", "name": "HNO Praxis im Mercado" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.931508, 53.5528636 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.70, "osm_id": "2469886267", "code": 2120, "fclass": "doctors", "name": "D. Hanke" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9608968, 53.5638287 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.90, "osm_id": "2645627073", "code": 2120, "fclass": "doctors", "name": "Dr. med. Ruth Hauck" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9136913, 53.5581017 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.78, "osm_id": "3238320609", "code": 2120, "fclass": "doctors", "name": "Kinderarzt Gerhard Jacob" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9606384, 53.5635004 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 1.00, "osm_id": "3673306893", "code": 2120, "fclass": "doctors", "name": "Notfallpraxis Altona" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9599747, 53.5598519 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.90, "osm_id": "3746458789", "code": 2120, "fclass": "doctors", "name": "Nobis Bene" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9539703, 53.5504973 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.78, "osm_id": "4706293289", "code": 2120, "fclass": "doctors", "name": "Dr. med. Michael Hoff" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9314182, 53.5519884 ] ] } },
+{ "type": "Feature", "properties": { "capacity": 1, "rating": 0.94, "osm_id": "5771658340", "code": 2120, "fclass": "doctors", "name": "Gemeinschaftspraxis Clemens Schultz Str." }, "geometry": { "type": "MultiPoint", "coordinates": [ [ 9.9639571, 53.5524253 ] ] } }
+]
+}
