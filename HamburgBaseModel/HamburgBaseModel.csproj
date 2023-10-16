@@ -18,9 +18,4 @@
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\SOHModel\SOHModel.csproj" />
-    </ItemGroup>
-
 </Project>
