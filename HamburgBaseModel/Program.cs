@@ -7,15 +7,14 @@ using System.Threading;
 using HamburgBaseModel.Model.Agents;
 using HamburgBaseModel.Model.Layers;
 using Mars.Common.Core.Logging;
-using Mars.Common.Core.Logging.Enums;
 using Mars.Components.Starter;
 using Mars.Core.Simulation;
 using Mars.Interfaces;
 using Mars.Interfaces.Model;
-using SOHModel.Domain.Layers;
-using SOHModel.Entities.Bicycle.Rental;
-using SOHModel.Entities.Car.Model;
-using SOHModel.Entities.Car.Parking;
+using SOHBicycleModel.Rental;
+using SOHCarModel.Model;
+using SOHCarModel.Parking;
+using SOHDomain.Graph;
 
 namespace HamburgBaseModel
 {

@@ -2,7 +2,7 @@
 using HamburgBaseModel.Misc;
 using HamburgBaseModel.Model.Layers;
 using Mars.Interfaces.Annotations;
-using SOHModel.Multimodal.Model.Agents;
+using SOHMultimodalModel.Model;
 
 namespace HamburgBaseModel.Model.Agents
 {

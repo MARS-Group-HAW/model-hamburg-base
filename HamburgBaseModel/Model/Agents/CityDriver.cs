@@ -1,7 +1,7 @@
 using HamburgBaseModel.Model.Layers;
 using Mars.Interfaces.Annotations;
 using Mars.Interfaces.Environments;
-using SOHModel.Multimodal.Model.Agents;
+using SOHMultimodalModel.Model;
 
 namespace HamburgBaseModel.Model.Agents
 {

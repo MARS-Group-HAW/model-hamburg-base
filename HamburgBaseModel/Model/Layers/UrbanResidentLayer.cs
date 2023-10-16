@@ -7,7 +7,7 @@ using Mars.Core.Data;
 using Mars.Interfaces.Data;
 using Mars.Interfaces.Environments;
 using Mars.Interfaces.Layers;
-using SOHModel.Multimodal.Model.Layers;
+using SOHMultimodalModel.Multimodal;
 
 namespace HamburgBaseModel.Model.Layers
 {

@@ -1,6 +1,6 @@
 ﻿using Mars.Interfaces.Environments;
 using Mars.Interfaces.Layers;
-using SOHModel.Domain.Model.Layers;
+using SOHDomain.Model;
 
 namespace HamburgBaseModel.Model.Layers
 {
